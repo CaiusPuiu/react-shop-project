@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-function About() {
+function TermsAndConditions() {
     return(
         <div>
             <Layout>
-                <h1>Despre noi</h1>
+                <h1>Termeni si conditii</h1>
                     <dl class="row m-1">
                         <dt class="col-sm-3">Descriere</dt>
                         <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
@@ -35,4 +35,4 @@ function About() {
     );
 }
 
-export default About;
+export default TermsAndConditions;

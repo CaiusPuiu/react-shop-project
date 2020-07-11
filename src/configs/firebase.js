@@ -1,11 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCcbZMkwd4ZV_1DiH0R3TZFCg9GKaIMeoM",
-    authDomain: "react-sirluggia-shop.firebaseapp.com",
-    databaseURL: "https://react-sirluggia-shop.firebaseio.com",
-    projectId: "react-sirluggia-shop",
-    storageBucket: "react-sirluggia-shop.appspot.com",
-    messagingSenderId: "184253035461",
-    appId: "1:184253035461:web:20fe5c173c7675c74c51ac"
-};
-
-export default firebaseConfig;
+    apiKey: "AIzaSyCVlgZ8sE5OdoE2z4GJQcmg_HkZd_kCYIY",
+    authDomain: "gear-up-dc0e4.firebaseapp.com",
+    databaseURL: "https://gear-up-dc0e4.firebaseio.com",
+    projectId: "gear-up-dc0e4",
+    storageBucket: "gear-up-dc0e4.appspot.com",
+    messagingSenderId: "1052862709369",
+    appId: "1:1052862709369:web:ba4ae997aee41256561ea8"
+  };
+  export default firebaseConfig;
