@@ -40,7 +40,7 @@ class Product extends React.Component {
                         <div className="image-wrapper d-flex mr-5">
                             <img src={product.image} alt="Product presentation"/>
                         </div>
-                        <div className="product-details">
+                        <div className="product-details ml-5">
                             <p className="h3 text-danger">{product.price} {product.currency}</p>
                             <button
                                 className="btn btn-dark mb-4 font-weight-bold"

@@ -39,7 +39,7 @@ function Footer() {
                         </a>
                     </p>
                     <p className="m-0">
-                        <a href="">
+                        <a href="s">
                             <LinkedIn className="mr-1 footer-icon"/>
                             
                         </a>
