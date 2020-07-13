@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from './pages/Home';
 import About from './pages/About';
 import Login from './pages/Login';
+import TermsAndConditions from './pages/TermsAndConditions'
 import Page404 from './pages/Page404';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" component={Home}/>
         <Route path="/cart" component={Cart}/>
         <Route path="/about" component={About}/>
+        <Route path="/terms-and-conditions" component={TermsAndConditions}/>
         <Route path="/category/:categoryName" component={Category}/>
         <Route path="/product/:productId" component={Product}/>
         <Route path="*" component={Page404}/>
