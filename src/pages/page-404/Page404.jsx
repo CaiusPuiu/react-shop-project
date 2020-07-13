@@ -1,9 +1,11 @@
 import React from 'react';
+import './Page404';
 
 function Page404() {
     return(
         <div>
-            <h1>404</h1>
+            <h1 className=''>Page404</h1>
+          
         </div>
     );
 }
