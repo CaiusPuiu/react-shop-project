@@ -6,7 +6,7 @@ import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
 
 import './Login.css'
 import { connect } from 'react-redux';
-import { loginUser } from '../../redux/user/userActions';
+import { loginGoogleUser,loginFacebookUser } from '../../redux/user/userActions';
 
 class Login extends React.Component {
 
@@ -35,7 +35,7 @@ class Login extends React.Component {
                 </button>
                 <button
                     className="btn btn-outline-dark d-flex align-items-center mt-3"
-                    onClick={() => this.props.signInWithGoogle()}
+                    onClick={() => this.props.signInWithFacebook()}
                 >
                     <Facebook className="w-50 mr-3"/>
                     <span className="text-nowrap">Loghează-te cu Facebook</span>
@@ -53,7 +53,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        signInWithGoogle: () => dispatch(loginUser())
+        signInWithGoogle: () => dispatch(loginGoogleUser()),
+        signInWithFacebook: () => dispatch(loginFacebookUser())
     }
 }
 

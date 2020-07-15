@@ -1,4 +1,4 @@
-import { signInWithGoogle, signOut } from '../../apis/firebase/firebase';
+import { signInWithGoogle, signInWithFacebook, signOut } from '../../apis/firebase/firebase';
 import {START_LOADING, UPDATE_USER_DATA, UPDATE_USER_ERROR} from './userConstants';
 
 function startLoading() {
@@ -19,7 +19,7 @@ function updateUserError(payload) {
     }
 }
 
-export function loginUser() {
+export function loginGoogleUser() {
     return (dispatch) => {
         dispatch(startLoading());
 
@@ -30,6 +30,19 @@ export function loginUser() {
         });
     }
 }
+
+export function loginFacebookUser() {
+    return (dispatch) => {
+        dispatch(startLoading());
+
+        signInWithFacebook().then(userData => {
+            dispatch(updateUserData(userData.user));
+        }).catch(error => {
+            dispatch(updateUserError(error));
+        });
+    }
+}
+
 
 export function logoutUser() {
     return dispatch => {
